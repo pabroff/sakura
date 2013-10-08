@@ -48,6 +48,7 @@ You can deploy SAKURA PHOTOS on Heroku easily.
    * `heroku config:add TWITTER_CONSUMER_SECRET=yourkey`
  * Change the buildpack for Coffeescript support (I'm using this buildpack temporary, since it's the one works for me)
    * `heroku config:add BUILDPACK_URL=git://github.com/tmandry/heroku-buildpack-django.git`
+ * `heroku config:add BUILDPACK_URL=git://github.com/heroku/heroku-buildpack-python.git#v17`
  * `git push heroku master`
  * `heroku ps:scale web=1`
  * `heroku open` or just visit `http://yourappname.herokuapp.com/` on the browser
